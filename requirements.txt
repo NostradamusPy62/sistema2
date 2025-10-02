@@ -1,0 +1,70 @@
+# Core Django
+Django==4.2.7
+asgiref==3.7.2
+sqlparse==0.4.4
+# Database
+psycopg2-binary==2.9.7
+# Images and Files
+Pillow==10.0.1
+# Environment
+python-decouple==3.8
+# Utilities
+pytz==2023.3
+python-dateutil==2.8.2
+# Security
+bcrypt==4.0.1
+cryptography==41.0.7
+# AWS
+django-storages==1.13.2
+boto3==1.28.62
+botocore==1.31.62
+s3transfer==0.7.0
+# HTTP
+urllib3==1.26.20
+requests==2.31.0
+charset-normalizer==3.3.2
+certifi==2024.8.30
+idna==3.7
+# Google AI
+google-generativeai==0.3.2
+google-api-core==2.15.0
+google-auth==2.23.0
+google-api-python-client==2.108.0
+google-auth-httplib2==0.1.1
+proto-plus==1.23.0
+protobuf==4.25.3
+grpcio==1.62.1
+grpcio-status==1.62.1
+# PDF Generation
+reportlab==4.0.4
+xhtml2pdf==0.2.13
+html5lib==1.1
+pypdf==3.17.0
+# WeasyPrint and dependencies
+weasyprint==58.0
+cairocffi==1.6.1
+cairosvg==2.7.1
+cssselect2==0.7.0
+tinycss2==1.2.1
+pyphen==0.14.0
+# Arabic text
+arabic-reshaper==3.0.0
+python-bidi==0.4.2
+# XML/HTML
+lxml==4.9.3
+# Digital signatures
+pyHanko==0.19.0
+pyhanko-certvalidator==0.19.6
+asn1crypto==1.5.1
+oscrypto==1.3.0
+# Session
+django-session-timeout==0.1.0
+# Other utilities
+colorama==0.4.6
+jmespath==1.0.1
+six==1.16.0
+typing_extensions==4.9.0
+tzdata==2024.1
+tzlocal==5.2
+webencodings==0.5.1
+PyYAML==6.0.1
