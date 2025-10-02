@@ -29,7 +29,7 @@ GOOGLE_AI_API_KEY = 'AIzaSyBXOzSCJeSRuNCwacJ-ARmAnyGOcGPSGVw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['ecommerce-env.eba-iffqfmj2.sa-east-1.elasticbeanstalk.com']
 
 
 # Application definition
