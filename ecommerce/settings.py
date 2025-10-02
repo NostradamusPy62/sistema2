@@ -22,12 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-%fo96-4d6cb#@&0d^_s-$$p23rtd*ub8(l6(2u_b$^rrai#%m&'
+SECRET_KEY = config('SECRET_KEY')
 
-GOOGLE_AI_API_KEY = 'AIzaSyBXOzSCJeSRuNCwacJ-ARmAnyGOcGPSGVw'
+GOOGLE_AI_API_KEY = config('GOOGLE_AI_API_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = ['ecommerce-env.eba-iffqfmj2.sa-east-1.elasticbeanstalk.com']
 
@@ -154,12 +154,12 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'surubi991@gmail.com'
-EMAIL_HOST_PASSWORD = 'yqxv urlu irtj karp'
+EMAIL_BACKEND = config('EMAIL_BACKEND')
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 
 # Default primary key field type
